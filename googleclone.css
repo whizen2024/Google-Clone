@@ -1,234 +1,206 @@
-/* General body styling */
+/* ======================= */
+/* General Page Setup      */
+/* ======================= */
 body {
-    font-family: sans-serif; /* Set the font family for the body */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header styling */
+/* ======================= */
+/* Header Styling          */
+/* ======================= */
 .header {
-    font-family: sans-serif; /* Font for the header */
-    justify-content: flex-end; /* Align items to the right */
-    font-size: 14px; /* Font size for header text */
-    display: flex; /* Use flexbox for layout */
+  display: flex;
+  justify-content: flex-end;
+  font-size: 17px;
+  padding: 10px 20px;
 }
 
-/* Header link styling */
 .header a {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Text color for links */
-    margin-right: 20px; /* Space between links */
-    transition: 1s; /* Smooth transition for hover effects */
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  transition: 0.3s;
 }
 
-/* Header link hover effects */
 .header a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: brown; /* Change color on hover */
-    font-size: 20px; /* Increase font size on hover */
+  text-decoration: underline;
+  color: brown;
 }
 
-/* Header image styling */
-.header img {
-    border-radius: 50px; /* Round corners for images */
-}
-
-/* Padding for specific header elements */
 .header #gmail, #images {
-    padding-top: 8px; /* Add top padding */
+  padding-top: 8px;
 }
 
-/* Header image hover effects */
 .header img:hover {
-    width: 50px; /* Increase width on hover */
-    height: 50px; /* Increase height on hover */
-    transition: 1s; /* Smooth transition for size change */
+  width: 50px;
+  height: 50px;
+  transition: 1s;
 }
 
-/* Main body styling */
+/* ======================= */
+/* Main Body Styling       */
+/* ======================= */
 #mainbody {
-    position: relative; /* Position relative for child elements */
-    padding-top: 6%; /* Top padding for the main body */
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* Main body image styling */
 #mainbody img {
-    display: block; /* Make image a block element */
-    margin-left: auto; /* Center image horizontally */
-    margin-right: auto; /* Center image horizontally */
-    width: 300px; /* Fixed width */
-    height: 70%; /* Relative height */
+  width: 300px;
 }
 
-/* Input section styling */
+/* ======================= */
+/* Input Section Styling   */
+/* ======================= */
 #inputSection {
-    width: 100%; /* Full width for the input section */
-    display: inline-block; /* Inline block display */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Input field container styling */
-#inputSection #takeInput {
-    position: relative; /* Position relative for icons */
-    width: 50%; /* Width for input container */
-    display: flex; /* Use flexbox for layout */
-    margin-left: auto; /* Center container horizontally */
-    margin-right: auto; /* Center container horizontally */
+#takeInput {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 5px 15px;
+  background: white;
 }
 
-/* Search icon styling */
-#inputSection #takeInput #searchIcon {
-    position: absolute; /* Absolute positioning */
-    z-index: 1; /* Stack above other elements */
-    left: 12px; /* Position from left */
-    top: 12px; /* Position from top */
+#takeInput input {
+  flex: 1; /* input expands to fill space */
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
-/* Voice icon styling */
-#inputSection #takeInput #voiceIcon {
-    position: absolute; /* Absolute positioning */
-    display: flex; /* Use flexbox */
-    flex: 0 0 auto; /* Do not grow or shrink */
-    left: 95%; /* Position from left */
-    top: 12%; /* Position from top */
+#takeInput:hover {
+  box-shadow: 0px 2px 5px #61C5FA;
+  border: none;
 }
 
-/* Input field styling */
-#inputSection #takeInput input {
-    display: flex; /* Flex display */
-    margin-left: auto; /* Center input horizontally */
-    margin-right: auto; /* Center input horizontally */
-    width: 100%; /* Full width */
-    height: 40px; /* Fixed height */
-    border-width: 1px; /* Border width */
-    border-radius: 50px; /* Rounded corners */
-    padding-left: 20px; /* Padding on left */
-    outline: none; /* Remove outline */
-    padding-left: 40px; /* Additional padding on left */
+/* Search & Icons */
+#searchIcon img {
+  width: 20px;
 }
 
-/* Input field hover effects */
-#inputSection #takeInput input:hover {
-    box-shadow: 0px 2px 5px #61C5FA; /* Shadow on hover */
-    border-width: 0px; /* Remove border on hover */
+#voiceIcon {
+  margin-right: 20px;
 }
 
-/* Input field focus effects */
-#inputSection #takeInput input:focus {
-    box-shadow: 0px 1px 5px #61C5FA; /* Shadow on focus */
-    border-width: 0px; /* Remove border on focus */
+#voiceIcon img {
+  width: 1.3rem;
 }
 
-/* Different buttons section styling */
-#inputSection #differentButtons {
-    padding-top: 2%; /* Top padding */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center buttons */
-    margin-left: auto; /* Center section horizontally */
-    margin-right: auto; /* Center section horizontally */
+#imageSearchIcon img {
+  width: 1.9rem;
 }
 
-/* Button styling */
-#inputSection #differentButtons button {
-    font-size: 15px; /* Font size for buttons */
-    padding: 10px; /* Padding for buttons */
-    display: flex; /* Flex display */
-    margin-right: 20px; /* Space between buttons */
-    border: 1px solid #f8f9fa; /* Border styling */
-    border-radius: 7px; /* Rounded corners */
-    background-color: rgba(245, 245, 245, 0.479); /* Background color */
+/* ======================= */
+/* Buttons Section         */
+/* ======================= */
+#differentButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Button hover effects */
-#inputSection #differentButtons button:hover {
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.192); /* Shadow on hover */
-    background-color: rgba(136, 126, 126, 0.1); /* Change background on hover */
-    transition: 0.1s; /* Smooth transition */
+#differentButtons button {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #f8f9fa;
+  border-radius: 7px;
+  background-color: #f5f5f5;
+  cursor: pointer;
 }
 
-/* Language selection section styling */
+#differentButtons button:hover {
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+/* ======================= */
+/* Language Section        */
+/* ======================= */
 #langSelect {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping of items */
-    justify-content: center; /* Center items */
-    margin-top: 30px; /* Top margin */
-    font-size: 15px; /* Font size */
+  margin: 30px 0;       /* space above footer */
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
-/* Language link styling */
 #langSelect a {
-    text-decoration: none; /* Remove underline from links */
-    padding-left: 15px; /* Padding on left */
+  margin-left: 8px;
+  text-decoration: none;
+  color: #1a0dab;
+  font-size: 14px;
 }
 
-/* Language link hover effects */
 #langSelect a:hover {
-    text-decoration: none; /* Maintain no underline on hover */
-    padding-left: 15px; /* Padding on left */
-    transition: 0.5s; /* Smooth transition */
-    font-size: 20px; /* Increase font size on hover */
+  text-decoration: underline;
 }
 
-/* Footer styling */
+/* ======================= */
+/* Footer Styling          */
+/* ======================= */
 #footer {
-    background-color: rgba(226, 226, 226, 0.5); /* Background color */
-    position: absolute; /* Absolute positioning */
-    bottom: 5px; /* Position at the bottom */
-    flex-shrink: 0; /* Prevent shrinking */
-    margin-left: -8px; /* Adjust left margin */
-    width: 100%; /* Full width */
+  background-color: rgba(226, 226, 226, 0.5);
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
 }
 
-/* Upper footer section styling */
 #footer #upper {
-    padding-left: 2%; /* Padding on left */
-    padding-top: 15px; /* Top padding */
-    padding-bottom: 10px; /* Bottom padding */
-    color: rgb(68, 65, 65, 0.7); /* Text color */
-    font-size: 15px; /* Font size */
+  padding-left: 2%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: rgb(68, 65, 65, 0.7);
+  font-size: 15px;
 }
 
-/* Lower footer section styling */
 #footer #lower #leftside {
-    float: left; /* Align to the left */
-    padding-left: 3%; /* Left padding */
-    padding-top: 6px; /* Top padding */
-    padding-bottom: 7px; /* Bottom padding */
+  float: left;
+  padding-left: 3%;
+  padding-top: 6px;
+  padding-bottom: 7px;
 }
 
-/* Left side links in the footer */
 #footer #lower #leftside a {
-    text-decoration: none; /* Remove underline */
-    color: rgb(68, 65, 65, 0.7); /* Text color */
-    padding-right: 20px; /* Space between links */
-    font-size: 14px; /* Font size */
+  text-decoration: none;
+  color: rgb(68, 65, 65, 0.7);
+  padding-right: 20px;
+  font-size: 14px;
 }
 
-/* Left side link hover effects */
 #footer #lower #leftside a:hover {
-    color: rgb(68, 65, 65, 1); /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
-    transition: 1s; /* Smooth transition */
-    font-size: 20px; /* Increase font size on hover */
+  color: rgb(68, 65, 65, 1);
+  text-decoration: underline;
+  transition: 1s;
+  font-size: 20px;
 }
 
-/* Right side footer section styling */
 #footer #lower #rightside {
-    float: right; /* Align to the right */
-    padding-right: 3%; /* Right padding */
-    padding-top: 6px; /* Top padding */
-    padding-bottom: 7px; /* Bottom padding */
+  float: right;
+  padding-right: 3%;
+  padding-top: 6px;
+  padding-bottom: 7px;
 }
 
-/* Right side links in the footer */
 #footer #lower #rightside a {
-    text-decoration: none; /* Remove underline */
-    color: rgb(68, 65, 65, 0.7); /* Text color */
-    padding-left: 20px; /* Space between links */
-    font-size: 14px; /* Font size */
+  text-decoration: none;
+  color: rgb(68, 65, 65, 0.7);
+  padding-left: 20px;
+  font-size: 14px;
 }
 
-/* Right side link hover effects */
 #footer #lower #rightside a:hover {
-    color: rgb(68, 65, 65, 1); /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
-    transition: 1s; /* Smooth transition */
-    font-size: 20px; /* Increase font size on hover */
+  color: rgb(68, 65, 65, 1);
+  text-decoration: underline;
+  transition: 1s;
+  font-size: 20px;
 }
